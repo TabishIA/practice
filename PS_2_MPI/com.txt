@@ -1,0 +1,5 @@
+export MPJ_HOME=$PWD/mpj
+export PATH=$MPJ_HOME/bin:PATH
+
+javac -cp $MPJ_HOME/lib/mpj.jar PracMPI.java
+mpjrun.sh -np 4 PracMPI
